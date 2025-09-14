@@ -1,3 +1,5 @@
+import productImage from '../assets/product.svg';
+
 export default function ProductShowcase(){
     const products = [
     { id: 1, name: 'Toca Túnel Mediano', price: 'R$ 199,00', rating: 4 },
@@ -16,7 +18,7 @@ export default function ProductShowcase(){
           {products.map((product) => (
             <article key={product.id} className="product-card">
               <div className="product-card__image">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxyZWN0IHg9IjUwIiB5PSI3NSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzhENjE0NCIvPgo8L3N2Zz4=" alt={product.name} />
+                <img src={productImage} alt={product.name} />
               </div>
               <div className="product-card__content">
                 <div className="product-rating">
