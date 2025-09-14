@@ -1,15 +1,22 @@
+import img1 from "../assets/cat.svg";
+import img2 from "../assets/cat-2.svg";
+import img3 from "../assets/cat-3.svg";
+import img4 from "../assets/cat-4.svg";
+import img5 from "../assets/cat-5.svg";
+
 export default function GalleryHashtag(){
+  const images = [img1, img2, img3, img4, img5];
   return (
     <section className="gallery-hashtag">
       <div className="container">
         <header className="section-head">
-          <p>Fica por conta da comunidade do gatinhos que adoram os nossos designs and pordutos com a hashtag:</p>
-          <h2>#AdoradoresDePanelaio</h2>
+          <p>Faça parte da comunidade de gatunos que amam design e papelão compartilhando a hashtag:</p>
+          <h2 className="hashtag">#AdoradoresDePapelão</h2>
         </header>
         <div className="gallery__strip">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {images.map((src, i) => (
             <div key={i} className="gallery__item">
-              <img src={`data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI2NyIgdmlld0JveD0iMCAwIDIwMCAyNjciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjY3IiBmaWxsPSIjRjVGNUY1Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjEzMyIgcj0iMzAiIGZpbGw9IiM4RDYxNDQiLz4KPC9zdmc+`} alt={`Galeria ${i + 1}`} />
+              <img src={src} alt={`Galeria ${i + 1}`} />
             </div>
           ))}
         </div>

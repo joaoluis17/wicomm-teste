@@ -7,7 +7,6 @@ export default function HotspotsShowcase() {
     <section className="hotspots-showcase-full">
       <div className="hotspots-bg-full">
         <img src={bannerCat} alt="Ambiente decorado com gatos" className="hotspots-bg-img" />
-        {/* Hotspots numerados nas posições exatas do Figma */}
         <span className="hotspot-btn hotspot-1">1</span>
         <span className="hotspot-btn hotspot-2">2</span>
         <span className="hotspot-btn hotspot-3">3</span>
