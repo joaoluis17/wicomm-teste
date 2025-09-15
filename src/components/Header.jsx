@@ -7,17 +7,17 @@ export default function Header() {
   return (
     <header className="header" role="banner">
       <div className="header__main container">
-        {/* Logo e área de fundo clara */}
         <div className="header__logo-area">
           <div className="header__logo-bg">
-            <img src={logoBlack} alt="Logo GAT" className="header__logo-img" />
+            <a href="#">
+              <img src={logoBlack} alt="Logo GAT" className="header__logo-img" />
+            </a>
           </div>
           <nav className="header__nav header__nav--left" aria-label="Menu principal">
             <a href="#produtos">produtos</a>
             <a href="#colecoes">coleções</a>
           </nav>
         </div>
-        {/* Central: input de busca */}
         <div className="header__center">
           <div className="header__search" role="search">
             <input type="text" placeholder="digite aqui o que procura" aria-label="Buscar" />
@@ -26,7 +26,6 @@ export default function Header() {
             </button>
           </div>
         </div>
-        {/* Direita: abas e ícones */}
         <div className="header__right">
           <nav className="header__nav header__nav--right" aria-label="Menu secundário">
             <a href="#blog">blog</a>

@@ -1,12 +1,78 @@
-# React + Vite
+# Wicomm Teste – Landing Page ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido como teste técnico para a Wicomm, utilizando ReactJS e Vite, com foco em componentização, pixel perfect e boas práticas de SEO. O layout segue fielmente o Figma fornecido, priorizando a versão desktop.
 
-Currently, two official plugins are available:
+## 🖥️ Tecnologias Utilizadas
+- [ReactJS](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [Google Fonts – Sora](https://fonts.google.com/specimen/Sora)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Estrutura do Projeto
+```
+src/
+	components/      # Componentes React reutilizáveis
+	assets/          # Imagens e SVGs
+	styles/          # CSS global
+	App.jsx          # Composição principal da página
+	main.jsx         # Ponto de entrada
+public/
+	...              # Assets públicos
+index.html         # SEO e metatags
+```
 
-## Expanding the ESLint configuration
+## 🚀 Como rodar o projeto localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Pré-requisitos
+- Node.js (v18 ou superior recomendado)
+- npm ou yarn
+
+### Instalação
+1. Clone este repositório:
+	 ```
+	 git clone https://github.com/joaoluis17/wicomm-teste.git
+	 cd wicomm-teste
+	 ```
+2. Instale as dependências:
+	 ```
+	 npm install
+	 # ou
+	 yarn
+	 ```
+
+### Rodando em modo desenvolvimento
+```
+npm run dev
+# ou
+yarn dev
+```
+Acesse [http://localhost:5173](http://localhost:5173) no navegador.
+
+### Build para produção
+```
+npm run build
+# ou
+yarn build
+```
+Os arquivos otimizados ficarão em `/dist`.
+
+### Preview do build
+```
+npm run preview
+# ou
+yarn preview
+```
+
+## 🔎 SEO e Acessibilidade
+- O projeto possui metatags, Open Graph, Twitter Card e Schema.org no `index.html`.
+- Todas as imagens possuem `alt` e elementos interativos usam `aria-label`.
+
+## 📋 Observações
+- O layout é focado em desktop, mas há responsividade básica.
+- Todos os textos, imagens e interações seguem o Figma fornecido.
+- O formulário de newsletter é visual, sem integração real.
+
+## 👨‍💻 Autor
+- [João Luis Prado](https://github.com/joaoluis17)
+
+---

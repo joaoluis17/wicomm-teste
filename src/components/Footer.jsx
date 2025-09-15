@@ -16,7 +16,9 @@ export default function Footer() {
           {/* Coluna da Logo */}
           <div className="footer-col footer-col-logo">
             <div className="footer-logo">
-              <img src={logoWhite} alt="Logo GAT" />
+              <a href="#">
+                <img src={logoWhite} alt="Logo GAT" />
+              </a>
             </div>
           </div>
 
